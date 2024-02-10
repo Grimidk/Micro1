@@ -3,16 +3,22 @@
 <head style="color:rgb(19, 19, 62); text-align:center;">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creditos</title>
-   <h1>Creditos</h1>
-   <p>Modulo Creditos</p>
+    <title>threeBy</title>
+   <h1>Plantilla 3 x 3</h1>
 </head>
 <body style="color:rgb(19, 19, 62); text-align:center; line-height: 1.5;" content="width=device-width, initial-scale=1.0">
-    <menus>
+    
+    <br><menus>
+        Escoger otra Plantilla.
+        <li><button type="button" id="btn" onclick="goBackPlay()">Regresar</button></li>
         Volver al Inicio.
         <li><button type="button" id="btn" onclick="goBack()">Regresar</button></li>
       </menus>  
     <script>
+        function goBackPlay() { 
+            window.open("play.html"); 
+            window.close(window.self);
+        }
         function goBack() { 
             window.open("index.html"); 
             window.close(window.self);

@@ -10,23 +10,10 @@
 <body style="color:rgb(19, 19, 62); text-align:center; line-height: 1.5;" content="width=device-width, initial-scale=1.0">
     <menus >
         Seleccione un Modulo.
-        <li><button type="button" id="btn" onclick="play()">Jugar</button></li>
-        <li><button type="button" id="btn" onclick="stats()">Estadisticas</button></li>
-        <li><button type="button" id="btn" onclick="creds()">Creditos</button></li>
+        <li><button type="button" id="btn" onclick="goPlay()">Jugar</button></li>
+        <li><button type="button" id="btn" onclick="goStats()">Estadisticas</button></li>
+        <li><button type="button" id="btn" onclick="goCreds()">Creditos</button></li>
       </menus>
-    <script>
-        function play() { 
-            window.open("play.html"); 
-            window.close(window.self);
-        }
-        function stats() { 
-            window.open("stats.html"); 
-            window.close(window.self);
-        }
-        function creds() { 
-            window.open("creds.html"); 
-            window.close(window.self);
-        }
-    </script>
+    <script src = "script.js"></script>
 </body>
 </html>

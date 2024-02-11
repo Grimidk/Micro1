@@ -8,37 +8,21 @@
    <p>Modulo Jugar</p>
 </head>
 <body style="color:rgb(19, 19, 62); text-align:center; line-height: 1.5;" content="width=device-width, initial-scale=1.0">
-    <input id="user1" type="text" required="required"> Jugador 1 </input>
-    <br><input id="user2" type="text" required="required"> Jugador 2 </input>
-    <br><input id="user3" type="text" required="required"> Jugador 3 </input>
-    <br><input id="user4" type="text" required="required"> Jugador 4 </input>
+    <input id="user1" type="text" required="required" placeholder="Nombre"> Jugador 1 </input>
+    <br><input id="user2" type="text" required="required" placeholder="Nombre"> Jugador 2 </input>
+    <br><input id="user3" type="text" required="required" placeholder="Nombre"> Jugador 3 </input>
+    <br><input id="user4" type="text" required="required" placeholder="Nombre"> Jugador 4 </input>
     <br><br><div>
         Seleccione el Tamaño de la Cuadrilla
-        <br><button type="button" id="btn" onclick="threeBy()">3 x 3</button>
-        <button type="button" id="btn" onclick="fourBy()">4 x 4</button>
-        <button type="button" id="btn" onclick="fiveBy()">5 x 5</button>
+        <br><button type="button" id="btn" onclick="goThree()">3 x 3</button>
+        <button type="button" id="btn" onclick="goFour()">4 x 4</button>
+        <button type="button" id="btn" onclick="goFive()">5 x 5</button>
     </div> 
     <br><menus>
         Volver al Inicio.
-        <li><button type="button" id="btn" onclick="goBack()">Regresar</button></li>
-      </menus>  
-    <script>
-        function goBack() { 
-            window.open("index.html"); 
-            window.close(window.self);
-        }
-        function threeBy() {
-            window.open("playThreeBy.html"); 
-            window.close(window.self);
-        }
-        function fourBy() {
-            window.open("playFourBy.html"); 
-            window.close(window.self);
-        }
-        function fiveBy() {
-            window.open("playFiveBy.html"); 
-            window.close(window.self);
-        }
-    </script>
+        <li><button type="button" id="btn" onclick="goIndex()">Regresar</button></li>
+    <script src = "script.js"></script>
+</menus> 
+    <script src = "script.js"></script>
 </body>
 </html>

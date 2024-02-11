@@ -7,9 +7,89 @@
     <title>goFour</title>
    <h1>Plantilla 4 x 4</h1>
 </head>
-<body class="body" content="width=device-width, initial-scale=1.0">
-    
-    <br><menus>
+<body class="body" content="width=device-width, initial-scale=1.0" onload = fillBoxes()>
+  <h3>Player 1</h3> 
+  <div class="grid4"> 
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>    
+  </div>
+  <br><h3>Player 2</h3> 
+  <div class="grid4"> 
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>    
+  </div>
+  <br><h3>Player 3</h3> 
+  <div class="grid4"> 
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>    
+  </div>
+  <br><h3>Player 4</h3> 
+  <div class="grid4"> 
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>  
+    <div class="box"></div>    
+  </div>
+  <br><h3>Ultimo Numero:</h3>
+  <h3 id="ultNum">0</h3>
+  <h3>Turno:</h3>
+  <h3 id="turnCount">0</h3>
+  <button type="button" id="btnTurn" onclick="nextTurn(turn)">Siguiente Turno</button>
+    <br><br><menus>
         Escoger otra Plantilla.
         <li><button type="button" id="btn" onclick="goPlay()">Regresar</button></li>
         Volver al Inicio.

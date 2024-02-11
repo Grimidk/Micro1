@@ -38,6 +38,28 @@ function goFive() {
     window.open("playFive.html"); 
     window.close(window.self);
 }
-function names() {  
-    window.alert(user1);
+function genNums() {
+    return Math.floor(Math.random() * 50) + 1;
+}
+function fillBoxes() {
+    const boxes = document.querySelectorAll(".box");
+    for (let i = 0; i < boxes.length; i++) {
+        boxes[i].textContent = genNums()
+    }
+}
+let turn = 0
+function nextTurn() {
+    const numElement = document.querySelector('#ultNum');
+    numElement.textContent = genNums()
+    const turnElement = document.querySelector('#turnCount');
+    let turn = turnElement.textContent
+    turn ++
+    turnElement.textContent = turn
+    if(turn >= 25){
+        window.alert("Juego terminado!")
+        document.querySelector('#btnTurn').disabled = true;
+    }
+}
+function endGame(){
+
 }

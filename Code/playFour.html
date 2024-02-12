@@ -7,9 +7,17 @@
     <title>goFour</title>
    <h1>Plantilla 4 x 4</h1>
 </head>
-<body class="body" content="width=device-width, initial-scale=1.0" onload = fillBoxes()>
-  <h3>Player 1</h3> 
-  <div class="grid4"> 
+<body class="body" content="width=device-width, initial-scale=1.0" onload = fillBoxes();setNames()>
+  <label for="activePlayer">Ver Jugador: </label>
+  <select name="activePlayer" id="activePlayer">
+    <option value="player1" id="activePlayer1">Player 1</option>
+    <option value="player2" id="activePlayer2">Player 2</option>
+    <option value="player3" id="activePlayer3">Player 3</option>
+    <option value="player4" id="activePlayer4">Player 4</option>
+    <option value="allplayers" id="activePlayerAll">Todos</option>
+  </select>
+  <h3 id="player1">Player 1</h3> 
+  <div class="grid4" id="player1grid"> 
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
@@ -27,8 +35,8 @@
     <div class="box"></div>  
     <div class="box"></div>    
   </div>
-  <br><h3>Player 2</h3> 
-  <div class="grid4"> 
+  <br><h3 id="player2">Player 2</h3> 
+  <div class="grid4" id="player2grid"> 
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
@@ -46,8 +54,8 @@
     <div class="box"></div>  
     <div class="box"></div>    
   </div>
-  <br><h3>Player 3</h3> 
-  <div class="grid4"> 
+  <br><h3 id="player3">Player 3</h3> 
+  <div class="grid4" id="player3grid"> 
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
@@ -65,8 +73,8 @@
     <div class="box"></div>  
     <div class="box"></div>    
   </div>
-  <br><h3>Player 4</h3> 
-  <div class="grid4"> 
+  <br><h3 id="player4">Player 4</h3> 
+  <div class="grid4" id="player4grid"> 
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>

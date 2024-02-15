@@ -152,9 +152,9 @@ function nextTurn(n) {
     let rando = genNums();
     numElement.textContent = rando;
     checkBox(rando);
-    let points1 = checkScore(n,1,rando);
-    const player1points = document.querySelector('#player1points');
-    player1points.textContent = points1;
+    // let points1 = checkScore(n,1,rando);
+    // const player1points = document.querySelector('#player1points');
+    // player1points.textContent = points1;
     // points2 = checkScore(n,2)
     // const player2points = document.querySelector('#player2points');
     // player2points.textContent = points2;
